@@ -1,0 +1,28 @@
+body{
+  background: black;
+}
+
+.top_title {
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+.partners {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.partners li {
+  width: calc(100%/3);
+	padding:0 5px;
+	box-sizing:border-box;
+}
+
+.top-banner li img {
+	max-width:100%;
+	height: auto;
+	border:solid 1px #ccc;
+}
