@@ -1,4 +1,4 @@
-body{
+body {
   background: black;
 }
 
@@ -7,32 +7,32 @@ body{
   padding-top: 30px;
   text-align: center;
   font-size: 4vw;
-  font-family: 'Libre Barcode 39 Text', cursive;
+  font-family: "Libre Barcode 39 Text", cursive;
 }
 
 .partners {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .partners li {
-  width: calc(100%/3);
-	padding:0 5px;
-	box-sizing:border-box;
+  width: calc(100% / 3);
+  padding: 0 5px;
+  box-sizing: border-box;
 }
 
 .top-banner li img {
-	max-width:100%;
-	height: auto;
-	border:solid 1px #ccc;
+  max-width: 100%;
+  height: auto;
+  border: solid 1px #ccc;
 }
 
 .bar {
-  position:fixed;
-  top:0px;
+  position: fixed;
+  top: 0px;
   height: 100px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.0);
+  background-color: rgba(255, 255, 255, 0);
 }
 img.logo {
   width: 30vw;
@@ -40,4 +40,20 @@ img.logo {
   padding: 20px;
   display: inline-block;
   float: left;
+}
+#beast {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+#inochi {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+#cdle {
+  display: flex;
+  justify-content: cwqienter;
+  height: 300px;
+  margin-top: -5%;
 }
