@@ -22,12 +22,14 @@ body {
   width: calc(100% / 3);
   padding: 0 5px;
   box-sizing: border-box;
+  
 }
 
 .top-banner li img {
   max-width: 100%;
   height: auto;
   border: solid 1px #ccc;
+  vertical-align: middle;
 }
 
 .bar {
@@ -39,25 +41,43 @@ body {
 }
 
 img.logo {
-  width: 1vw;
+  width: 8vw;
   max-width: 150px;
   padding: 20px;
   display: inline-block;
   float: left;
 }
+
+img.beast {
+    object-fit: contain;
+    width: 10vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img.inochi {
+    object-fit: contain;
+    width: 10vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img.cdle {
+    object-fit: contain;
+    width: 10vw;  
+    margin: 0 auto;
+    text-align: center;
+}
+
 #beast {
   display: flex;
-  justify-content: center;
-  height: 150px;
+  margin: 0 auto;
 }
 #inochi {
   display: flex;
-  justify-content: center;
-  height: 300px;
-}
+  vertical-align: middle;
+  }
 #cdle {
   display: flex;
-  justify-content: cwqienter;
-  height: 300px;
-  margin-top: -5%;
+  vertical-align: middle;
 }
