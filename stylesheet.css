@@ -43,10 +43,28 @@ body {
 .top {
   position: relative;
   width: 100%;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(2vw, 25px);
+  color: white;
   min-height: 100vh;
-  background-image: url(img/bg_code.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.event {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
+}
+
+.event h1 {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 5vw;
+  color: white;
 }
 
 .about {
@@ -54,6 +72,14 @@ body {
   text-align: center;
   font-family: 'Yantramanav', sans-serif;
   font-size: min(2.8vw, 25px);
+  color: white;
+}
+
+.about h1 {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 5vw;
   color: white;
 }
 
