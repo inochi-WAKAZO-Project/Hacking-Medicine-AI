@@ -22,7 +22,7 @@ body {
   width: calc(100% / 3);
   padding: 0 5px;
   box-sizing: border-box;
-  
+
 }
 
 .top-banner li img {
@@ -38,6 +38,14 @@ body {
   height: 100px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
+}
+
+.about {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
 }
 
 img.logo {
@@ -64,7 +72,7 @@ img.inochi {
 
 img.cdle {
     object-fit: contain;
-    width: 10vw;  
+    width: 10vw;
     margin: 0 auto;
     text-align: center;
 }
