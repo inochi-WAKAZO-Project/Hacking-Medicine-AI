@@ -22,7 +22,6 @@ body {
   width: calc(100% / 3);
   padding: 0 5px;
   box-sizing: border-box;
-
 }
 
 .top-banner li img {
@@ -43,7 +42,7 @@ body {
 .top {
   position: relative;
   width: 100%;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-size: min(2vw, 25px);
   color: white;
   min-height: 100vh;
@@ -54,7 +53,7 @@ body {
 .event {
   padding: 2rem 0;
   text-align: center;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-size: min(2.8vw, 25px);
   color: white;
 }
@@ -70,7 +69,7 @@ body {
 .about {
   padding: 2rem 0;
   text-align: center;
-  font-family: 'Yantramanav', sans-serif;
+  font-family: "Yantramanav", sans-serif;
   font-size: min(2.8vw, 25px);
   color: white;
 }
@@ -92,24 +91,24 @@ img.logo {
 }
 
 img.beast {
-    object-fit: contain;
-    width: 10vw;
-    margin: 0 auto;
-    text-align: center;
+  object-fit: contain;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
 img.inochi {
-    object-fit: contain;
-    width: 10vw;
-    margin: 0 auto;
-    text-align: center;
+  object-fit: contain;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
 img.cdle {
-    object-fit: contain;
-    width: 10vw;
-    margin: 0 auto;
-    text-align: center;
+  object-fit: contain;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #beast {
@@ -119,8 +118,46 @@ img.cdle {
 #inochi {
   display: flex;
   vertical-align: middle;
-  }
+}
 #cdle {
   display: flex;
   vertical-align: middle;
+}
+/* .top_title {
+  width: 100%;
+  overflow: hidden;
+}
+
+.top_title h1 {
+  font-size: 2em;
+  color: #fff;
+  animation: flowing 5s linear;
+}
+
+@keyframes flowing {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+} */
+.top_title {
+  font-size: 30px;
+  font-weight: bold;
+  animation-name: faderight;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: flex;
+  margin-left: 250px;
+}
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(150px);
+  }
 }
