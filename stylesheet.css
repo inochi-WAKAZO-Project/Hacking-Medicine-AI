@@ -147,7 +147,7 @@ img.cdle {
   font-weight: bold;
   animation-name: faderight;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  /* animation-iteration-count: infinite; */
   display: flex;
   margin-left: 250px;
 }
