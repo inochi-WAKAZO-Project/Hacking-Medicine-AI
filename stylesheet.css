@@ -161,3 +161,40 @@ img.cdle {
     transform: translateX(150px);
   }
 }
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+  }
+
+.copyright {
+  font-family: "Yantramanav", sans-serif;
+  color: black;
+}
+
+.contact a{
+  font-family: "Yantramanav", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
