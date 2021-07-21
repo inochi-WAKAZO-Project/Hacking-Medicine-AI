@@ -13,7 +13,82 @@ body {
   text-align: center;
   top: calc(30% - 0.5em);
 }
+.glitch {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #fff;
+  letter-spacing: 5px;
+}
+.glitch:before, .glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+.glitch:after {
+  color: #f0f;
+  z-index: -2;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
 
+}
+.glitch:before {
+  color: #0ff;
+  z-index: -1;
+  -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
 .top_title {
   margin: 0;
   color: white;
@@ -38,10 +113,8 @@ body {
 }
 
 .partners li a {
-  text-align:center;
+  text-align: center;
 }
-
-
 
 .top-banner li img {
   max-width: 100%;
@@ -49,8 +122,6 @@ body {
   border: solid 1px #ccc;
   vertical-align: middle;
 }
-
-
 
 .bar {
   position: fixed;
@@ -62,7 +133,6 @@ body {
 
 .top {
   position: relative;
-
   min-height: 100vh;
   text-align: center;
   font-family: "Yantramanav", sans-serif;
@@ -110,14 +180,13 @@ body {
   color: white;
 }
 
-.orgs h2{
-    padding: 1rem 0;
-    text-align: center;
-    font-family: 'Yantramanav', sans-serif;
-    font-size: min(3.5vw, 25px);
-    color: white;
-  }
-
+.orgs h2 {
+  padding: 1rem 0;
+  text-align: center;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(3.5vw, 25px);
+  color: white;
+}
 
 img.logo {
   width: min(20vw, 120px);
@@ -151,7 +220,7 @@ img.cdle {
 img.chest-xray {
   max-width: 500px;
   padding: 20px;
-  width:80%;
+  width: 80%;
   display: block;
   margin: 0 auto;
 }
@@ -172,6 +241,56 @@ img.chest-xray {
   color: white;
 }
 
+.members {
+  text-align: center;
+  overflow-x: auto;
+	white-space: nowrap;
+}
+@media only screen and (min-device-width: 1000px) {
+  .members {
+    text-align: center;
+    overflow-x: auto;
+  	white-space: nowrap;
+  }
+}
+
+
+.members li {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+img.ren {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+img.sana {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+img.yui {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+img.souta {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+img.mana {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+
 .faq {
   padding: 2rem 0;
   text-align: center;
@@ -189,19 +308,19 @@ img.chest-xray {
 }
 
 footer {
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    padding: 50px 0;
-    background-color: white;
-  }
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: white;
+}
 
 .copyright {
   font-family: "Yantramanav", sans-serif;
   color: black;
 }
 
-.contact a{
+.contact a {
   font-family: "Yantramanav", sans-serif;
   text-decoration: none;
   color: black;
