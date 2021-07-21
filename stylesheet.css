@@ -27,13 +27,21 @@ body {
 .partners {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .partners li {
   width: calc(100% / 3);
   padding: 0 5px;
   box-sizing: border-box;
+  display: inline-block;
 }
+
+.partners li a {
+  text-align:center;
+}
+
+
 
 .top-banner li img {
   max-width: 100%;
@@ -41,6 +49,8 @@ body {
   border: solid 1px #ccc;
   vertical-align: middle;
 }
+
+
 
 .bar {
   position: fixed;
@@ -144,19 +154,6 @@ img.chest-xray {
   width:80%;
   display: block;
   margin: 0 auto;
-}
-
-#beast {
-  display: flex;
-  margin: 0 auto;
-}
-#inochi {
-  display: flex;
-  vertical-align: middle;
-}
-#cdle {
-  display: flex;
-  vertical-align: middle;
 }
 
 .team {
