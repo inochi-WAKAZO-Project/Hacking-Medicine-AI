@@ -3,15 +3,24 @@ body {
 }
 
 * {
+  margin: 0;
 }
 
 .top_title {
+  margin: 0;
+  position: absolute;
+  top: calc(30% - 0.5em);
   color: white;
   padding-top: 100px;
   text-align: center;
   font-size: 4vw;
   font-family: "Libre Barcode 39 Text", cursive;
+  padding: 50px;
 }
+.top_title h1 {
+  font-size: 4vw;
+}
+
 
 .partners {
   display: flex;
@@ -83,7 +92,7 @@ body {
 }
 
 img.logo {
-  width: 8vw;
+  width: 20vw;
   max-width: 150px;
   padding: 20px;
   display: inline-block;
