@@ -6,21 +6,23 @@ body {
   margin: 0;
 }
 
-.top_title {
+.top_text {
   margin: 0;
   position: absolute;
+  width: 100%;
+text-align: center;
   top: calc(30% - 0.5em);
+}
+
+.top_title {
+  margin: 0;
   color: white;
   padding-top: 100px;
-  text-align: center;
+  top: calc(30% - 0.5em);
   font-size: 4vw;
   font-family: "Libre Barcode 39 Text", cursive;
   padding: 50px;
 }
-.top_title h1 {
-  font-size: 4vw;
-}
-
 
 .partners {
   display: flex;
@@ -50,13 +52,12 @@ body {
 
 .top {
   position: relative;
-  width: 100%;
+
+  min-height: 100vh;
+  text-align: center;
   font-family: "Yantramanav", sans-serif;
   font-size: min(2vw, 25px);
   color: white;
-  min-height: 100vh;
-  background-position: center;
-  background-size: cover;
 }
 
 .event {
@@ -71,7 +72,7 @@ body {
   padding: 2rem 0;
   text-align: center;
   font-family: "Libre Barcode 39 Text", cursive;
-  font-size: 5vw;
+  font-size: 4.5vw;
   color: white;
 }
 
@@ -87,12 +88,12 @@ body {
   padding: 2rem 0;
   text-align: center;
   font-family: "Libre Barcode 39 Text", cursive;
-  font-size: 5vw;
+  font-size: 4.5vw;
   color: white;
 }
 
 img.logo {
-  width: 20vw;
+  width: min(20vw, 120px);
   max-width: 150px;
   padding: 20px;
   display: inline-block;
@@ -151,25 +152,6 @@ img.cdle {
     transform: translateX(50%);
   }
 } */
-.top_title {
-  font-size: 30px;
-  font-weight: bold;
-  animation-name: faderight;
-  animation-duration: 2s;
-  /* animation-iteration-count: infinite; */
-  display: flex;
-  margin-left: 250px;
-}
-@keyframes faderight {
-  from {
-    opacity: 0;
-    transform: translateX(0);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(150px);
-  }
-}
 
 footer {
     width: 100%;
