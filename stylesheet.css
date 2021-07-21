@@ -10,7 +10,7 @@ body {
   margin: 0;
   position: absolute;
   width: 100%;
-text-align: center;
+  text-align: center;
   top: calc(30% - 0.5em);
 }
 
@@ -21,7 +21,7 @@ text-align: center;
   top: calc(30% - 0.5em);
   font-size: 4vw;
   font-family: "Libre Barcode 39 Text", cursive;
-  padding: 50px;
+  padding: 5px 50px 50px 50px;
 }
 
 .partners {
@@ -121,6 +121,14 @@ img.cdle {
   text-align: center;
 }
 
+img.chest-xray {
+  max-width: 500px;
+  padding: 20px;
+  width:80%;
+  display: block;
+  margin: 0 auto;
+}
+
 #beast {
   display: flex;
   margin: 0 auto;
@@ -133,25 +141,23 @@ img.cdle {
   display: flex;
   vertical-align: middle;
 }
-/* .top_title {
-  width: 100%;
-  overflow: hidden;
+
+.team {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
 }
 
-.top_title h1 {
-  font-size: 2em;
-  color: #fff;
-  animation: flowing 5s linear;
+.team h1 {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 4.5vw;
+  color: white;
 }
 
-@keyframes flowing {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(50%);
-  }
-} */
 
 footer {
     width: 100%;
