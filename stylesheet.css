@@ -407,6 +407,12 @@ img.chest-xray {
   font-size:2vw;
 }
 
+.profile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  opacity: 0.7;
+}
+
 img.ren {
   width: 15vw;
   padding: 20px;
@@ -441,6 +447,12 @@ img.keigo {
   width: 15vw;
   padding: 20px;
   border-radius: 50%
+}
+
+.univ {
+  color: white;
+  font-family: "Yantramanav", sans-serif;
+  font-size: min(1.3vw, 25px);
 }
 
 .faq {
