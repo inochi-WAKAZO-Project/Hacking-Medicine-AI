@@ -184,15 +184,15 @@ body {
 }
 
 .event {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   font-family: "Yantramanav", sans-serif;
-  font-size: min(2.8vw, 25px);
+  font-size: min(1.6vw,26px);
   color: white;
 }
 
 .event h1 {
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   font-family: "Libre Barcode 39 Text", cursive;
   font-size: 4.5vw;
@@ -265,15 +265,15 @@ body {
 }
 
 .orgs {
-  padding: 1rem 0;
+  padding: 0 1rem 1rem 1rem;
   text-align: center;
   font-family: 'Yantramanav', sans-serif;
-  font-size: min(1.3vw,25px);
+  font-size: min(1.6vw,26px);
   color: white;
 }
 
 .orgs h2 {
-  padding: 1rem 0;
+  padding: 0 1rem 1rem 1rem;
   text-align: center;
   font-family: 'Yantramanav', sans-serif;
   font-size: min(2vw, 25px);
@@ -389,6 +389,11 @@ img.mana {
   border-radius: 50%
 }
 
+img.keigo {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
 
 .faq {
   padding: 2rem 0;
