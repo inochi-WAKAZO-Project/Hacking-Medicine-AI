@@ -118,20 +118,61 @@ body {
   text-align: center;
 }
 
-.top-banner li img {
-  max-width: 100%;
-  height: auto;
-  border: solid 1px #ccc;
-  vertical-align: middle;
-}
-
 .bar {
   position: fixed;
   top: 0px;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 15px;
   height: 100px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
+  text-align: center;
+  vertical-align: middle;
 }
+
+.wrap {
+  display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.slide_menu {
+  list-style: none;
+  display: flex;
+  vertical-align: middle;
+  animation: loop-slide 20s infinite linear 1s both;
+}
+@keyframes loop-slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} 
+.content {
+  padding: 20px 5vw;
+}
+
+.content_last {
+  padding: 20px 1vw 20px 5vw;
+}
+
+.content a {
+  vertical-align: middle;
+  text-align:center;
+  text-decoration: none;
+  color: rgba(125, 125, 125, 30);
+}
+
+.content_last a {
+  vertical-align: middle;
+  text-align:center;
+  text-decoration: none;
+  color: rgba(125, 125, 125, 30);
+}
+
 
 .top {
   position: relative;
@@ -191,10 +232,11 @@ body {
 }
 
 img.logo {
-  width: min(20vw, 120px);
-  max-width: 150px;
+  width: 120px;
   padding: 20px;
   display: inline-block;
+  text-align: center;
+  vertical-align: center;
   float: left;
 }
 
@@ -255,11 +297,17 @@ img.chest-xray {
   	white-space: nowrap;
   }
 }
-
-
+.members::-webkit-scrollbar {
+  display: none;
+}
 .members li {
   box-sizing: border-box;
   display: inline-block;
+}
+
+.profile {
+  display: inline-block;
+  font-size:2vw;
 }
 
 img.ren {
