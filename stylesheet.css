@@ -137,11 +137,12 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+
 .slide_menu {
   list-style: none;
   display: flex;
   vertical-align: middle;
-  animation: loop-slide 20s infinite linear 1s both;
+  animation: loop-slide 30s infinite linear 1s both;
 }
 @keyframes loop-slide {
   from {
@@ -150,7 +151,7 @@ body {
   to {
     transform: translateX(-100%);
   }
-} 
+}
 .content {
   padding: 20px 5vw;
 }
@@ -177,7 +178,6 @@ body {
 .top {
   position: relative;
   min-height: 100vh;
-  text-align: center;
   font-family: "Yantramanav", sans-serif;
   font-size: min(2vw, 25px);
   color: white;
@@ -199,6 +199,55 @@ body {
   color: white;
 }
 
+.event_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+  width: 50vw;
+  margin-right: 3%;
+}
+
+.text p {
+  padding: 0px 20px 20px 20px;
+}
+
+.pictute {
+  margin-left: 3%;
+}
+
+.picture img {
+  max-width: 500px;
+  padding: 0px 20px 20px 20px;
+  width: 50vw;
+}
+
+@media (max-width:768px) {
+  .event_content {
+    flex-direction: column;
+  }
+
+  .text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .picture {
+    width:100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .picture img {
+    width:50%;
+    height:auto;
+  }
+}
 .about {
   padding: 0.5rem 0;
   text-align: center;
