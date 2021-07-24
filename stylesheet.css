@@ -204,19 +204,22 @@ body {
   }
   img.beast {
     object-fit: contain;
-
+    width: 10vw;
+    margin: 0 auto;
     text-align: center;
   }
 
   img.inochi {
     object-fit: contain;
-
+    width: 10vw;
+    margin: 0 auto;
     text-align: center;
   }
 
   img.cdle {
     object-fit: contain;
-
+    width: 10vw;
+    margin: 0 auto;
     text-align: center;
   }
 }
@@ -477,6 +480,41 @@ body {
     animation: hop 2s infinite;
   }
 }
+
+.guest {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
+}
+
+.guest h1 {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 4.5vw;
+  color: white;
+}
+
+@media only screen and (max-width:768px) {
+  .guest {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw,22px);
+    color: white;
+  }
+
+  .guest h1 {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 10vw;
+    color: white;
+  }
+
+
 .about {
   padding: 0.5rem 0;
   text-align: center;
