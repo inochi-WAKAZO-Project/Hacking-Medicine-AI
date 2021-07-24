@@ -27,6 +27,7 @@ body {
   color: #fff;
   letter-spacing: 5px;
 }
+
 .glitch:before, .glitch:after {
   display: block;
   content: attr(data-glitch);
@@ -38,55 +39,67 @@ body {
   width: 100%;
   opacity: 0.8;
 }
+
 .glitch:after {
   color: #f0f;
   z-index: -2;
   animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-
 }
+
 .glitch:before {
   color: #0ff;
   z-index: -1;
   -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-          animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
 }
 
 @-webkit-keyframes glitch {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translate(-2px, 2px);
   }
+
   40% {
     transform: translate(-2px, -2px);
   }
+
   60% {
     transform: translate(2px, 2px);
   }
+
   80% {
     transform: translate(2px, -2px);
   }
+
   to {
     transform: translate(0);
   }
 }
+
 @keyframes glitch {
   0% {
     transform: translate(0);
   }
+
   20% {
     transform: translate(-2px, 2px);
   }
+
   40% {
     transform: translate(-2px, -2px);
   }
+
   60% {
     transform: translate(2px, 2px);
   }
+
   80% {
     transform: translate(2px, -2px);
   }
+
   to {
     transform: translate(0);
   }
@@ -102,9 +115,7 @@ body {
   padding: 5px 50px 50px 50px;
 }
 
-
 @media only screen and (max-width:768px) {
-
   .top_text {
     margin: 0;
     position: absolute;
@@ -138,6 +149,7 @@ body {
     color: #fff;
     letter-spacing: 5px;
   }
+
   .glitch:before, .glitch:after {
     display: block;
     content: attr(data-glitch);
@@ -149,59 +161,72 @@ body {
     width: 100%;
     opacity: 0.8;
   }
+
   .glitch:after {
     color: #f0f;
     z-index: -2;
     animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-
   }
+
   .glitch:before {
     color: #0ff;
     z-index: -1;
     -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-            animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   }
 
   @-webkit-keyframes glitch {
     0% {
       transform: translate(0);
     }
+
     20% {
       transform: translate(-2px, 2px);
     }
+
     40% {
       transform: translate(-2px, -2px);
     }
+
     60% {
       transform: translate(2px, 2px);
     }
+
     80% {
       transform: translate(2px, -2px);
     }
+
     to {
       transform: translate(0);
     }
   }
+
   @keyframes glitch {
     0% {
       transform: translate(0);
     }
+
     20% {
       transform: translate(-2px, 2px);
     }
+
     40% {
       transform: translate(-2px, -2px);
     }
+
     60% {
       transform: translate(2px, 2px);
     }
+
     80% {
       transform: translate(2px, -2px);
     }
+
     to {
       transform: translate(0);
     }
   }
+
   img.beast {
     object-fit: contain;
     width: 10vw;
@@ -268,14 +293,17 @@ body {
   vertical-align: middle;
   animation: loop-slide 30s infinite linear 1s both;
 }
+
 @keyframes loop-slide {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
 }
+
 .content {
   padding: 20px 5vw;
 }
@@ -286,18 +314,17 @@ body {
 
 .content a {
   vertical-align: middle;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   color: rgba(125, 125, 125, 30);
 }
 
 .content_last a {
   vertical-align: middle;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   color: rgba(125, 125, 125, 30);
 }
-
 
 .top {
   position: relative;
@@ -307,11 +334,57 @@ body {
   color: white;
 }
 
+.scrolldown1 {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  height: 50px;
+}
+
+.scrolldown1 span {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: #eee;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+.scrolldown1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 30px;
+  background: #eee;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
 .event {
   padding: 0.5rem 0;
   text-align: center;
   font-family: "Yantramanav", sans-serif;
-  font-size: min(1.6vw,26px);
+  font-size: min(1.6vw, 26px);
   color: white;
 }
 
@@ -352,12 +425,11 @@ body {
 }
 
 @media only screen and (max-width:768px) {
-
   .event {
     padding: 0.5rem 0;
     text-align: center;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(4vw,22px);
+    font-size: min(4vw, 22px);
     color: white;
     margin: 0 15px;
   }
@@ -383,18 +455,17 @@ body {
   }
 
   .picture {
-    width:95%;
+    width: 95%;
     text-align: center;
     align-items: center;
   }
 
   .picture img {
-    width:95%;
-    height:auto;
+    width: 95%;
+    height: auto;
     text-align: center;
   }
 }
-
 
 .apply {
   color: white;
@@ -414,29 +485,34 @@ body {
   animation: hop 2s infinite;
 }
 
-
 @keyframes hop {
-    0% {
-        transform: translate(0px, 2px);
-    }
-    5% {
-        transform: translate(0px, -2px);
-    }
-    10% {
-        transform: translate(0px, 2px);
-    }
-    15% {
-        transform: translate(0px, -2px);
-    }
-    20% {
-        transform: translate(0px, 2px);
-    }
-    25% {
-        transform: translate(0px, -2px);
-    }
-    30% {
-        transform: translate(0px, 0px);
-    }
+  0% {
+    transform: translate(0px, 2px);
+  }
+
+  5% {
+    transform: translate(0px, -2px);
+  }
+
+  10% {
+    transform: translate(0px, 2px);
+  }
+
+  15% {
+    transform: translate(0px, -2px);
+  }
+
+  20% {
+    transform: translate(0px, 2px);
+  }
+
+  25% {
+    transform: translate(0px, -2px);
+  }
+
+  30% {
+    transform: translate(0px, 0px);
+  }
 }
 
 .form::before {
@@ -453,6 +529,7 @@ body {
   transform: scale(0, 1);
   transition: transform .3s;
 }
+
 .form:hover::before {
   transform-origin: left top;
   transform: scale(1, 1);
@@ -502,7 +579,7 @@ body {
     padding: 2rem 0;
     text-align: center;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(4vw,22px);
+    font-size: min(4vw, 22px);
     color: white;
   }
 
@@ -513,7 +590,7 @@ body {
     font-size: 10vw;
     color: white;
   }
-
+}
 
 .about {
   padding: 0.5rem 0;
@@ -535,7 +612,7 @@ body {
   padding: 0 1rem 1rem 1rem;
   text-align: center;
   font-family: 'Yantramanav', sans-serif;
-  font-size: min(1.6vw,26px);
+  font-size: min(1.6vw, 26px);
   color: white;
 }
 
@@ -547,12 +624,26 @@ body {
   color: white;
 }
 
+.js-marker {
+  display: inline;
+  position: relative;
+  background-image: linear-gradient(90deg, #ffff66, #dd8817);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0 10%;
+  transition: all 1s ease-in-out;
+}
+
+.js-marker.inview {
+  background-size: 100% 10%;
+}
+
 @media only screen and (max-width:768px) {
   .about {
     padding: 0.5rem 0;
     text-align: center;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(4vw,22px);
+    font-size: min(4vw, 22px);
     color: white;
     margin: 0 auto;
   }
@@ -569,7 +660,7 @@ body {
     padding: 0 1rem 1rem 1rem;
     text-align: center;
     font-family: 'Yantramanav', sans-serif;
-    font-size: min(2.1vw,15px);
+    font-size: min(2.1vw, 15px);
     color: white;
   }
 
@@ -581,7 +672,6 @@ body {
     color: white;
   }
 }
-
 
 img.logo {
   width: 120px;
@@ -640,7 +730,7 @@ img.chest-xray {
 .members {
   text-align: center;
   overflow-x: auto;
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .members::-webkit-scrollbar {
@@ -654,7 +744,7 @@ img.chest-xray {
 
 .profile {
   display: inline-block;
-  font-size:2vw;
+  font-size: 2vw;
 }
 
 img.team_icon {
@@ -665,7 +755,7 @@ img.team_icon {
 
 img.team_icon:hover {
   transform: translateY(-10px);
-  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
   opacity: 0.7;
 }
 
@@ -680,7 +770,7 @@ img.team_icon:hover {
     padding: 0.5rem 0;
     text-align: center;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(4vw,22px);
+    font-size: min(4vw, 22px);
     color: white;
   }
 
@@ -700,13 +790,13 @@ img.team_icon:hover {
 
   .profile {
     display: inline-block;
-    font-size:min(4vw,21px);
+    font-size: min(4vw, 21px);
   }
 
   .univ {
     color: white;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(3vw,20px);
+    font-size: min(3vw, 20px);
   }
 }
 
@@ -731,7 +821,7 @@ img.team_icon:hover {
     padding: 2rem 0;
     text-align: center;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(4vw,22px);
+    font-size: min(4vw, 22px);
     color: white;
   }
 
@@ -742,8 +832,8 @@ img.team_icon:hover {
     font-size: 10vw;
     color: white;
   }
-
 }
+
 footer {
   width: 100%;
   height: 50px;
@@ -787,14 +877,13 @@ footer {
   .copyright {
     font-family: "Yantramanav", sans-serif;
     color: black;
-    font-size: min(4vw,15px);
+    font-size: min(4vw, 15px);
   }
 
   .contact a {
     font-family: "Yantramanav", sans-serif;
     text-decoration: none;
     color: black;
-    font-size: min(4vw,15px);
+    font-size: min(4vw, 15px);
   }
-
 }
