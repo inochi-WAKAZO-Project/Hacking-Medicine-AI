@@ -13,6 +13,7 @@ body {
   text-align: center;
   top: calc(30% - 0.5em);
 }
+
 .glitch {
   font-size: min(2.5vw, 35px);
   font-family: "Raleway", sans-serif;
@@ -101,6 +102,125 @@ body {
   padding: 5px 50px 50px 50px;
 }
 
+
+@media only screen and (max-width:768px) {
+
+  .top_text {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    font-size: min(4vw, 20px);
+    text-align: center;
+    top: calc(30% - 0.5em);
+  }
+
+  .top_title {
+    margin: 0;
+    color: white;
+    padding-top: 100px;
+    top: calc(30% - 0.5em);
+    text-align: center;
+    font-size: min(9vw, 45px);
+    font-family: "Libre Barcode 39 Text", cursive;
+    padding: 5px 50px 50px 50px;
+  }
+
+  .glitch {
+    font-size: min(4vw, 20px);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #fff;
+    letter-spacing: 5px;
+  }
+  .glitch:before, .glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+  }
+  .glitch:after {
+    color: #f0f;
+    z-index: -2;
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+
+  }
+  .glitch:before {
+    color: #0ff;
+    z-index: -1;
+    -webkit-animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+            animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  }
+
+  @-webkit-keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    to {
+      transform: translate(0);
+    }
+  }
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    to {
+      transform: translate(0);
+    }
+  }
+  img.beast {
+    object-fit: contain;
+
+    text-align: center;
+  }
+
+  img.inochi {
+    object-fit: contain;
+
+    text-align: center;
+  }
+
+  img.cdle {
+    object-fit: contain;
+
+    text-align: center;
+  }
+}
+
 .partners {
   display: flex;
   flex-wrap: wrap;
@@ -109,7 +229,7 @@ body {
 
 .partners li {
   width: calc(100% / 3);
-  padding: 0 5px;
+  padding: 0 auto;
   box-sizing: border-box;
   display: inline-block;
 }
@@ -121,6 +241,7 @@ body {
 .bar {
   position: fixed;
   top: 0px;
+  z-index: 1;
   font-family: "Yantramanav", sans-serif;
   font-size: 15px;
   height: 100px;
@@ -227,27 +348,50 @@ body {
   width: 50vw;
 }
 
-@media (max-width:768px) {
+@media only screen and (max-width:768px) {
+
+  .event {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw,22px);
+    color: white;
+    margin: 0 15px;
+  }
+
+  .event h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 10vw;
+    color: white;
+  }
+
   .event_content {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .text {
-    text-align: center;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 15px;
   }
 
   .picture {
-    width:100%;
-    margin-left: 0;
+    width:95%;
     text-align: center;
+    align-items: center;
   }
 
   .picture img {
-    width:50%;
+    width:95%;
     height:auto;
+    text-align: center;
   }
 }
+
 
 .apply {
   color: white;
@@ -266,6 +410,7 @@ body {
   margin: 0 auto;
   animation: hop 2s infinite;
 }
+
 
 @keyframes hop {
     0% {
@@ -291,11 +436,47 @@ body {
     }
 }
 
+.form::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  border-radius: 10px 10px 10px 10px;
+  background: linear-gradient(to right, rgb(71, 212, 119), rgb(193, 227, 27));
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+.form:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
 .form a {
   text-decoration: none;
   color: white;
 }
 
+@media only screen and (max-width:768px) {
+  .apply {
+    color: white;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(10vw, 50px);
+  }
+
+  .form {
+    width: 90vw;
+    text-align: center;
+    font-size: min(4.5vw, 25px);
+    padding: 1rem 0;
+    background: linear-gradient(to right, rgb(88, 121, 215), rgb(207, 38, 190));
+    border-radius: 10px 10px 10px 10px;
+    animation: hop 2s infinite;
+  }
+}
 .about {
   padding: 0.5rem 0;
   text-align: center;
@@ -327,6 +508,42 @@ body {
   font-size: min(2vw, 25px);
   color: white;
 }
+
+@media only screen and (max-width:768px) {
+  .about {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw,22px);
+    color: white;
+    margin: 0 auto;
+  }
+
+  .about h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 10vw;
+    color: white;
+  }
+
+  .orgs {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(2.1vw,15px);
+    color: white;
+  }
+
+  .orgs h2 {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(3vw, 20px);
+    color: white;
+  }
+}
+
 
 img.logo {
   width: 120px;
@@ -387,16 +604,11 @@ img.chest-xray {
   overflow-x: auto;
 	white-space: nowrap;
 }
-@media only screen and (min-device-width: 1000px) {
-  .members {
-    text-align: center;
-    overflow-x: auto;
-  	white-space: nowrap;
-  }
-}
+
 .members::-webkit-scrollbar {
   display: none;
 }
+
 .members li {
   box-sizing: border-box;
   display: inline-block;
@@ -407,52 +619,57 @@ img.chest-xray {
   font-size:2vw;
 }
 
-.profile:hover {
+img.team_icon {
+  width: 15vw;
+  padding: 20px;
+  border-radius: 50%
+}
+
+img.team_icon:hover {
   transform: translateY(-10px);
   box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
   opacity: 0.7;
-}
-
-img.ren {
-  width: 15vw;
-  padding: 20px;
-  border-radius: 50%
-}
-
-img.sana {
-  width: 15vw;
-  padding: 20px;
-  border-radius: 50%
-}
-
-img.yui {
-  width: 15vw;
-  padding: 20px;
-  border-radius: 50%
-}
-
-img.souta {
-  width: 15vw;
-  padding: 20px;
-  border-radius: 50%
-}
-
-img.mana {
-  width: 15vw;
-  padding: 20px;
-  border-radius: 50%
-}
-
-img.keigo {
-  width: 15vw;
-  padding: 20px;
-  border-radius: 50%
 }
 
 .univ {
   color: white;
   font-family: "Yantramanav", sans-serif;
   font-size: min(1.3vw, 25px);
+}
+
+@media only screen and (max-width:768px) {
+  .team {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw,22px);
+    color: white;
+  }
+
+  .team h1 {
+    padding: 1rem 0;
+    text-align: center;
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 10vw;
+    color: white;
+  }
+
+  img.team_icon {
+    width: 30vw;
+    padding: 20px;
+    border-radius: 50%
+  }
+
+  .profile {
+    display: inline-block;
+    font-size:min(4vw,21px);
+  }
+
+  .univ {
+    color: white;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(3vw,20px);
+  }
 }
 
 .faq {
@@ -471,10 +688,30 @@ img.keigo {
   color: white;
 }
 
+@media only screen and (max-width:768px) {
+  .faq {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw,22px);
+    color: white;
+  }
+
+  .faq h1 {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 10vw;
+    color: white;
+  }
+
+}
 footer {
   width: 100%;
   height: 50px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   padding: 50px 0;
   background-color: white;
 }
@@ -506,4 +743,20 @@ footer {
 .fa-twitter {
   background: #55ACEE;
   color: white;
+}
+
+@media only screen and (max-width:768px) {
+  .copyright {
+    font-family: "Yantramanav", sans-serif;
+    color: black;
+    font-size: min(4vw,15px);
+  }
+
+  .contact a {
+    font-family: "Yantramanav", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: min(4vw,15px);
+  }
+
 }
