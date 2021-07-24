@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var markerText = document.querySelectorAll('.js-marker');
 
   var markerTextArr = Array.prototype.slice.call(markerText);
-  var
 
 
   var cb = function(entries, observer) {
