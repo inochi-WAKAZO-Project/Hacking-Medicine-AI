@@ -316,14 +316,14 @@ body {
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  color: rgba(125, 125, 125, 30);
+  color: rgb(240, 247, 255);
 }
 
 .content_last a {
   vertical-align: middle;
   text-align: center;
   text-decoration: none;
-  color: rgba(125, 125, 125, 30);
+  color: rgb(240, 247, 255);
 }
 
 .top {
@@ -613,6 +613,7 @@ body {
   text-align: center;
   font-family: 'Yantramanav', sans-serif;
   font-size: min(1.6vw, 26px);
+  line-height: 1.8em;
   color: white;
 }
 
