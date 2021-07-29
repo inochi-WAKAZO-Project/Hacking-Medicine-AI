@@ -438,23 +438,23 @@ body {
 }
 
 .time p {
-  display:inline-block;
-  vertical-align:middle;
+  display: inline-block;
+  vertical-align: middle;
   font-family: 'Yantramanav', sans-serif;
-  font-size: min(3vw, 25px);
+  font-size: min(1.6vw, 26px);
 }
 
 .place p {
-  display:inline-block;
-  vertical-align:middle;
+  display: inline-block;
+  vertical-align: middle;
   font-family: 'Yantramanav', sans-serif;
-  font-size: min(3vw, 25px);
+  font-size: min(1.6vw, 26px);
 }
 
 img.pin {
   max-width: 50px;
   padding: 20px;
-  width:5vw;
+  width: 5vw;
   display: block;
 }
 
