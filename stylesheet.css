@@ -402,16 +402,21 @@ body {
   justify-content: space-between;
   margin-bottom: 40px;
   text-align: center;
+  align-items: center;
 }
 
 .text {
   text-align: center;
   width: 50vw;
   margin-right: 3%;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .text p {
+  text-align: center;
   padding: 0px 20px 20px 20px;
+  align-items: center;
 }
 
 .pictute {
@@ -421,7 +426,43 @@ body {
 .picture img {
   max-width: 500px;
   padding: 0px 20px 20px 20px;
-  width: 50vw;
+  width: 38vw;
+}
+
+.detail {
+  padding: 0.5rem 0;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  font-size: min(1.6vw, 26px);
+  color: white;
+}
+
+.time p {
+  display:inline-block;
+  vertical-align:middle;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(3vw, 25px);
+}
+
+.place p {
+  display:inline-block;
+  vertical-align:middle;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: min(3vw, 25px);
+}
+
+img.pin {
+  max-width: 50px;
+  padding: 20px;
+  width:5vw;
+  display: block;
+}
+
+img.date {
+  max-width: 50px;
+  padding: 20px;
+  width: 5vw;
+  display: block;
 }
 
 @media only screen and (max-width:768px) {
