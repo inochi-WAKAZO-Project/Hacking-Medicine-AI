@@ -506,6 +506,41 @@ img.date {
     height: auto;
     text-align: center;
   }
+  .detail {
+    padding: 0.5rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw, 22px);
+    color: white;
+  }
+
+  .time p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(4vw, 22px);
+  }
+
+  .place p {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: min(4vw, 22px);
+  }
+
+  img.pin {
+    max-width: 50px;
+    padding: 20px;
+    width: 5vw;
+    display: block;
+  }
+
+  img.date {
+    max-width: 50px;
+    padding: 20px;
+    width: 5vw;
+    display: block;
+  }
 }
 
 .apply {
