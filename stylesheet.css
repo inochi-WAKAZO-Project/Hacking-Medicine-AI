@@ -506,11 +506,12 @@ img.date {
     height: auto;
     text-align: center;
   }
+
   .detail {
     padding: 0.5rem 0;
     text-align: center;
     font-family: "Yantramanav", sans-serif;
-    font-size: min(4vw, 22px);
+    font-size: min(3.7vw, 21px);
     color: white;
   }
 
@@ -518,14 +519,14 @@ img.date {
     display: inline-block;
     vertical-align: middle;
     font-family: 'Yantramanav', sans-serif;
-    font-size: min(4vw, 22px);
+    font-size: min(3.7vw, 21px);
   }
 
   .place p {
     display: inline-block;
     vertical-align: middle;
     font-family: 'Yantramanav', sans-serif;
-    font-size: min(4vw, 22px);
+    font-size: min(3.7vw, 21px);
   }
 
   img.pin {
