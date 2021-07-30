@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var markerTextArr = Array.prototype.slice.call(markerText);
 
-
   var cb = function(entries, observer) {
     entries.forEach((entry) => {
 
