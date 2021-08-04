@@ -660,6 +660,22 @@ img.date {
   }
 }
 
+.prize {
+  padding: 3rem 0 0.5rem 0;
+  text-align: center;
+  font-family: "Yantramanav", sans-serif;
+  font-size: min(2.8vw, 25px);
+  color: white;
+}
+
+.prize h1 {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 4.5vw;
+  color: white;
+}
+
 .guest {
   padding: 2rem 0;
   text-align: center;
@@ -677,6 +693,23 @@ img.date {
 }
 
 @media only screen and (max-width:768px) {
+
+  .prize {
+    padding: 3rem 0 0.5rem 0;
+    text-align: center;
+    font-family: "Yantramanav", sans-serif;
+    font-size: min(4vw, 22px);
+    color: white;
+  }
+
+  .prize h1 {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: "Libre Barcode 39 Text", cursive;
+    font-size: 10vw;
+    color: white;
+  }
+
   .guest {
     padding: 2rem 0;
     text-align: center;
