@@ -858,7 +858,7 @@ img.chest-xray {
 }
 
 img.team_icon {
-  width: 15vw;
+  width: min(15vw, 170px);
   padding: 20px;
   border-radius: 50%
 }
